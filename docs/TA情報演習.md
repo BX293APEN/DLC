@@ -76,11 +76,11 @@ WSL上のLinuxはWindowsホスト(実機)に名前解決を求めます
 
 ## 第3回
 ### [解説]
-tracerouteコマンドのオプションを変更すると経路が表示されるようになります  
-- `-I`              : ICMPプロトコルを使用  
-- `-T`              : TCPポートを使用  
-- `-U`              : UDPポートを使用  
-- `-p [ポート番号]` : `[ポート番号]`のポートを使う  
+tracerouteコマンドのオプション(※管理者権限 `sudo` 必要)を変更すると経路が表示されるようになります  
+- `-I`&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: ICMPプロトコルを使用  
+- `-T`&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: TCPポートを使用  
+- `-U`&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: UDPポートを使用  
+- `-p [ポート番号]`&emsp;: `[ポート番号]`のポートを使う  
 
 wwwサーバは Webサーバであるため、HTTPSポート(443番のTCPポート)が空いていることが多い
 
