@@ -71,7 +71,9 @@ WSL上のLinuxはWindowsホスト(実機)に名前解決を求めます
 
 ### [※注意 (資料も誤っているので減点対象ではない)]
 - Net28は、プレフィックス28なので  
-`nmcli conn mod "Wired connection 2" ipv4.method manual ipv4.addresses 192.168.2XX.1/28`  
+```bash
+nmcli conn mod "Wired connection 2" ipv4.method manual ipv4.addresses 192.168.2XX.1/28
+```
 です
 
 ## 第3回
