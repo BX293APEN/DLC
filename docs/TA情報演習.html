@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja" data-bs-theme="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google-site-verification" content="OC87FYYbTNU7c3Q1vn3qee5kXLtXMjotpx0iGK1ZPUU" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta property="og:title" content="とあるペンギンの実験室" />
+        <meta property="og:url" content="https://bx293apen.github.io/" />
+        <meta property="og:image" content="https://bx293apen.github.io/img/PEN.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="とあるペンギンの実験室" />
+        <meta property="og:description" content="PENの実験室" />
+        <meta name="theme-color" content="#FF0000" />
+        
+        
+        <script src="/model/index/index.js"></script>
+        <div id="styleList"></div>
+        <link href="/css/loading.css" rel="stylesheet">
+        <div class="loading-container" id="loadingScreen">
+            <div class="loading"></div>
+        </div>
+        <script src="/view/loading.js"></script>
+        <title>とあるペンギンの実験室</title>
+    </head>
+    <body>
+        <div id="header-contents"></div>
+        <div id="md-text" class ="pt-4 container"></div>
+        <div id="md-source" class ="container">
+> [ソース](/DLC/TA%E6%83%85%E5%A0%B1%E6%BC%94%E7%BF%92.md)
+        </div>
+    </body>
+    <footer class="container border-top" id="footer-contents"> <!-- FOOTER -->
+        <script src="/view/bootstrap.bundle.min.js"></script>
+        <script src="/view/search.js"></script>
+        <script src="/view/embeddedHTML.js"></script>
+        <script src="/view/highlight.min.js"></script>
+        <script src="/view/activenav.js"></script>
+        <script src="/view/tips/tips.js"></script>
+        <script src="/view/md.js"></script>
+        <script>
+            embedded_html("/template/styleConfig.html", "styleList");
+            embedded_html("/template/header.html", "header-contents");
+            embedded_html("/template/footer.html", "footer-contents");
+            window.addEventListener("load", active_nav("downloads"));
+            hljs.highlightAll();
+
+            new MarkDownLoader(
+                id              = "md-text",
+                mdFile          = "/DLC/TA%E6%83%85%E5%A0%B1%E6%BC%94%E7%BF%92.md", 
+            )
+            new MarkDownMaker(
+                id              = "md-source",
+            )
+        </script>
+    </footer>
+</html>
