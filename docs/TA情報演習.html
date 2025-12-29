@@ -26,7 +26,9 @@
     <body>
         <div id="header-contents"></div>
         <div class ="container pt-3">
-            <div id="md-text" class ="col-md-8"></div>
+            <main>
+                <div id="md-text" class ="col-md-8"></div>
+            </main>
 
             <div class="col-md-4">
                 <div class="position-sticky" style="top: 2rem;">
@@ -69,7 +71,7 @@
             new MarkDownMaker(
                 id              = "md-source",
             )
-            
+
             window.addEventListener(
                 "load",
                 new MarkDownTOC(
