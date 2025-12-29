@@ -25,10 +25,29 @@
     </head>
     <body>
         <div id="header-contents"></div>
-        <div id="md-text" class ="pt-4 container"></div>
-        <div id="md-source" class ="container">
+        <div class ="pt-3 container">
+            <div id="md-text" class ="col-md-8"></div>
+
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                    <div class="p-4">
+                        <div id="md-source">
+                            <h4 class="fst-italic border-bottom">References</h4>
 > [ソース](/DLC/TA%E6%83%85%E5%A0%B1%E6%BC%94%E7%BF%92.md)
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="fst-italic border-bottom">Table of Contents</h4>
+                        <div id = "toc"></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        </div>
+        
+        
+        
     </body>
     <footer class="container border-top" id="footer-contents"> <!-- FOOTER -->
         <script src="/view/bootstrap.bundle.min.js"></script>
@@ -51,6 +70,10 @@
             )
             new MarkDownMaker(
                 id              = "md-source",
+            )
+            new MarkDownTOC(
+                id              = "toc",
+                mdid            = "md-text",
             )
         </script>
     </footer>
