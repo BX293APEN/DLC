@@ -72,13 +72,10 @@
                 id              = "md-source",
             )
 
-            window.addEventListener(
-                "load",
-                new MarkDownTOC(
-                    id              = "toc",
-                    mdid            = "md-text",
-                    mdInstance      = mdInstance
-                )
+            new MarkDownTOC(
+                mdInstance,
+                id              = "toc",
+                mdid            = "md-text",
             )
         </script>
     </footer>
