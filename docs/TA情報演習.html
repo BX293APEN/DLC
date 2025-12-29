@@ -69,9 +69,13 @@
             new MarkDownMaker(
                 id              = "md-source",
             )
-            new MarkDownTOC(
-                id              = "toc",
-                mdid            = "md-text",
+            
+            window.addEventListener(
+                "load",
+                new MarkDownTOC(
+                    id              = "toc",
+                    mdid            = "md-text",
+                )
             )
         </script>
     </footer>
