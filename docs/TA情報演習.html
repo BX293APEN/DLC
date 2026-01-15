@@ -66,15 +66,13 @@
             window.addEventListener("load", active_nav("downloads"));
             hljs.highlightAll();
 
-            const mdtext        = new MarkDownMaker(
-                id              = "md-source",
-            )
             const mdInst        = new MarkDownLoader(
                 id              = "md-text",
-                mdFile          = "/DLC/TA%E6%83%85%E5%A0%B1%E6%BC%94%E7%BF%92.md", 
-                loadJS          = ["/view/highlight.min.js", "/view/marked.min.js"],
-                option          = { gfm: true },
-                mdInstance      = mdtext,
+                mdFile          = "/DLC/TA%E6%83%85%E5%A0%B1%E6%BC%94%E7%BF%92.md",
+            )
+            
+            new MarkDownMaker(
+                id              = "md-source",
             )
 
             new MarkDownTOC(
