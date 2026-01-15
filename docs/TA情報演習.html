@@ -66,17 +66,17 @@
             window.addEventListener("load", active_nav("downloads"));
             hljs.highlightAll();
 
-            const mdInstance = new MarkDownLoader(
+            const mdInst        = new MarkDownLoader(
                 id              = "md-text",
                 mdFile          = "/DLC/TA%E6%83%85%E5%A0%B1%E6%BC%94%E7%BF%92.md", 
             )
             new MarkDownMaker(
                 id              = "md-source",
-                mdInstance      = mdInstance,
+                mdInstance      = mdInst,
             )
 
             new MarkDownTOC(
-                mdInstance,
+                mdInstance      = mdInst,
                 id              = "toc",
                 mdid            = "md-text",
             )
