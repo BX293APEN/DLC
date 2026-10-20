@@ -89,8 +89,9 @@ wwwサーバは Webサーバであるため、HTTPSポート(443番のTCPポー�
 インターネット上のDNSサーバを使い、外部のネットワーク(WAN)の機器の名前や、IPアドレスを解決します  
 
 - WSLのDNSサーバ  
-WSL上のLinuxはWindowsホスト(実機)に名前解決を求めます  
-デフォルトでは実機のWindowsにDNSサーバの機能がないため、実質、実機のWindowsと同じDNSサーバを使っていることになります  
+WSL上のLinuxは実機のWindowsホストに名前解決を求めます  
+デフォルトでは実機のWindowsにDNSサーバ機能が有効ではないため、実機のWindowsに設定されているDNSサーバに実機Windowsが問い合わせを行います  
+つまり、実機Windowsの正引き名前解決(FQDN → IPアドレス)とWSL上の正引き名前解決(FQDN → IPアドレス)の結果は同じになります  
 
 
 ## 第4回
